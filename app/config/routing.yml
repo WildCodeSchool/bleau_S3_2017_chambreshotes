@@ -1,3 +1,5 @@
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+gest_house:
+    resource: "@GestHouseBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

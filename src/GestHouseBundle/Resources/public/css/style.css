@@ -1,0 +1,268 @@
+body {
+    background-color: #dacafb;
+    margin : 0!important;
+}
+a{
+    text-decoration: none;
+    transition: all 0.5s;
+    color: white;
+}
+a:hover{
+    color: #631878;
+    transition: all 0.5s;
+}
+a:active, a:focus{
+    text-decoration: none;
+    outline: none;
+}
+h1{
+    font-family: Qwigley;
+    font-size: 100px;
+    color: #2f073b;
+    text-align: center;
+    text-shadow: 3px 3px 0px white;
+}
+h2 {
+    font-family: Qwigley;
+    font-size: 75px;
+    color: #2f073b;
+    text-align: center;
+    text-shadow: 3px 3px 0px white;
+    margin: 0!important;
+}
+h3{
+    font-family: Qwigley;
+    font-size: 50px;
+    color: #2f073b;
+    text-align: center;
+}
+p{
+    color: #120639;
+    font-family: 'Andika';
+    text-align: justify;
+}
+form{
+    margin: auto;
+    width: 500px;
+}
+input{
+    background-color: #dacafb;
+    color: #120639;
+    font-family: 'Andika';
+    border-top: none;
+    border-bottom: 2px solid #878098;
+    border-right: none;
+    border-left: none;
+}
+textarea{
+    background-color: #dacafb;
+    border-top: none;
+    border-bottom: none;
+    border-right: 2px solid #878098;
+    border-left: 2px solid #878098;
+    color: #120639;
+    font-family: 'Andika';
+}
+.btn{
+    font-family: 'Bad Script';
+    margin: auto;
+    display: block;
+    background-color: #878098;
+    color : #dacafb;
+    border-top: 3px solid #878098;
+    border-bottom: 3px solid #878098;
+    border-right: none;
+    border-left: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: 0.5s;
+}
+.btn:hover{
+    transition: 1s;
+    color: white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.nav{
+    background-color: #878098;
+    min-height: 45px;
+    height: 5vh;
+    width: 60vw;
+    position: fixed;
+    font-size: 20px;
+    padding-right: 20vw;
+    padding-left: 20vw;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 5px white;
+    z-index: 1;
+}
+@media only screen and (max-width: 500px) {
+    .nav {
+        min-height: 90px;
+        height: 10vh;
+        flex-wrap: wrap;
+    }
+}
+    @media only screen and (max-width: 330px) {
+        .nav {
+            min-height: 135px;
+            height: 15vh;
+            flex-wrap: wrap;
+        }
+    }
+    .nav_word{
+        font-family: 'Bad Script';
+        transition: 0.5s;
+    }
+    .nav_word:hover{
+        transition: 1s;
+    }
+    .main_picture_div{
+        padding-top: 45px;
+        height: 70vh;
+        overflow: hidden;
+    }
+@media only screen and (max-width: 500px) {
+    .main_picture_div {
+        padding-top: 90px;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .main_picture_div {
+        padding-top: 135px;
+    }
+}
+    .main_picture{
+        width: 100vw;
+        margin-top: -20vh;
+    }
+    .homepage_title{
+        margin: 0!important;
+    }
+    .introduction{
+        width: 50vw;
+        margin: 0 auto;
+    }
+    .footer{
+        background-color: #bbb5c8;
+        height: 90px;
+        bottom: 0;
+        padding-top: 20px;
+        margin-top: 15vh;
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        height: 32px;
+        margin-right: 3vw;
+        margin-left: 3vw;
+        transition: 1s;
+        transform: rotate(0deg)
+    }
+    .logo:hover{
+        opacity: .5;
+        transition: 1s;
+        transform: rotate(30deg)
+    }
+    .block_room{
+        height: 250px;
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5vh;
+    }
+    .div_picture_block_room{
+        height: 100%;
+        width: 40%;
+        background-color: white;
+        overflow: hidden;
+        border: 3px solid white;
+    }
+    .picture_block_room{
+        height: 90%;
+        transition: 0.5s;
+    }
+    .picture_block_room:hover{
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+    .price_size{
+        height: 10%;
+        width: 100%;
+        color: #120639;
+        font-family: 'Andika';
+        text-align: center;
+        background-color: #878098;
+        margin-top: -4px;
+    }
+    .text_block_room{
+        height: 100%;
+        width: 53%;
+        padding-left: 3%;
+        padding-right: 3%;
+        overflow: auto;
+    }
+.text_form{
+    text-align: center;
+}
+.text_map_contact{
+    padding-top: 10vh;
+    width: 80vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.text_contact{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 30%;
+}
+.description_point_box{
+    width: 80vw;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.points{
+    background-color: #bbb5c8;
+    width: 26%;
+    height: 96%;
+    padding: 2%;
+}
+.description{
+    height: 98%;
+    width: 38%;
+    overflow: auto;
+    padding: 1%;
+}
+.picture_container{
+    height: 290px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 10vh;
+}
+.div_picture{
+    height: 250px;
+    max-width: 30%;
+    background-color: white;
+    overflow: hidden;
+    border: 5px solid white;
+    transition: 0.5s;
+}
+.div_picture:hover{
+    height: 396px;
+    max-width: 50%;
+    transition: 0.5s;
+}
+.picture{
+    height: 100%;
+    transition: 0.5s;
+}

@@ -2,12 +2,30 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <title>{% block title %}GuestHouse{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('https://fonts.googleapis.com/css?family=Andika|Bad+Script|Qwigley') }}" rel="stylesheet">
+            <link rel="stylesheet" href={{ asset('bundles/gesthouse/css/style.css') }}>
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('http://image.noelshack.com/fichiers/2017/17/1493283689-favicon.png') }}" />
     </head>
     <body>
+        {% block nav %}<div class="nav">
+            <span class="nav_word nv1"><a href="{{ path('homepage') }}">Accueil</a></span>
+            <span class="nav_word nv2"><a href="{{ path('bedrooms') }}">Chambres & Tarifs</a></span>
+            <span class="nav_word nv3"><a href="{{ path('activities') }}">Activités</a></span>
+            <span class="nav_word nv4"><a href="{{ path('contact') }}">Contact</a></span>
+        </div>{% endblock %}
         {% block body %}{% endblock %}
+        {% block footer %}
+            <div class="footer">
+                <img src="{{ asset('http://image.noelshack.com/fichiers/2017/17/1493302914-twitter.png') }}" alt="logo twitter" class="logo">
+                <img src="{{ asset('http://image.noelshack.com/fichiers/2017/17/1493302914-pinterest.png') }}" alt="logo pinterest" class="logo">
+                <img src="{{ asset('http://image.noelshack.com/fichiers/2017/17/1493302914-tumblr.png') }}" alt="logo tumblr" class="logo">
+                <img src="{{ asset('http://image.noelshack.com/fichiers/2017/17/1493302914-facebook.png') }}" alt="logo facebook" class="logo">
+
+            </div>
+        {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>

@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="main_picture_div home_picture_div">
+        <img src="{{ asset('http://image.noelshack.com/fichiers/2017/17/1493362957-keyboard-1905883.jpg') }}" alt="cat" class="home_picture main_picture">
+    </div>
+    <h2>Contactez-nous</h2>
+
+    <form action="">
+    <p class="text_form">
+        <label for="name">Votre nom :</label> <br>
+        <input type="text" name="name" id="name"/>
+        <br><br>
+    </p>
+        <p class="text_form">
+            <label for="email">Votre email :</label> <br>
+            <input type="text" name="email" id="email" />
+            <br><br>
+        </p>
+        <p class="text_form">
+            <label for="number">Votre numéro (facultatif) :</label> <br>
+            <input type="text" name="number" id="number" />
+            <br><br>
+        </p>
+        <p class="text_form">
+            <label for="subject">Sujet :</label> <br>
+            <input type="text" name="subject" id="subject"/>
+            <br><br>
+        </p>
+        <p>
+            <p class="text_form">
+            <label for="message">Votre message :</label><br>
+            <textarea name="message" id="message" cols="50" rows="10"></textarea>
+        </p>
+            <input type="submit" value="Envoyer" class="btn"/>
+    </form>
+
+    <div class="text_map_contact">
+        <div class="text_contact">
+            <p>Notre numéro 01-23-45-67-89</p>
+            <p>Notre mail : guesthouse@gmail.com</p>
+            <p>Notre adresse : 42 rue de la licorne rose 77300 Fontainebleau</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2648.522012481781!2d2.69995907971508!3d48.40812177750429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5f38bf6baad81%3A0x40b82c3688c5a90!2s77300+Fontainebleau!5e0!3m2!1sfr!2sfr!4v1493368610306"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+{% endblock %}
