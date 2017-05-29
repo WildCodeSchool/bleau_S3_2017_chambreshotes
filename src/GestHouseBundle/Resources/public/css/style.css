@@ -1,3 +1,20 @@
+/****************************************************************/
+/*                    GUESTHOUSE PROJECT CSS                    */
+/****************************************************************/
+
+/****** INDEX ******/
+/*
+    1. GENERALS PARAMETERS
+    2. CUSTOMIZABLES CLASS
+    3. NAVBAR
+    4. HOMEPAGE
+    5. FOOTER
+    6. ROOM'S/ACTIVITIES LIST
+    7. CONTACT
+    8. BEDROOM'S DESCRIPTION
+*/
+
+/************************************** 1. GENERALS PARAMETERS **************************************/
 body {
     background-color: #dacafb;
     margin : 0!important;
@@ -44,6 +61,8 @@ p{
 form{
     margin: auto;
     width: 500px;
+    color: #120639;
+    font-family: 'Andika';
 }
 input{
     background-color: #dacafb;
@@ -63,6 +82,8 @@ textarea{
     color: #120639;
     font-family: 'Andika';
 }
+/************************************** 2. CUSTOMIZABLES CLASS **************************************/
+
 .btn{
     font-family: 'Bad Script';
     margin: auto;
@@ -85,6 +106,8 @@ textarea{
     border-top: 3px solid white;
     border-bottom: 3px solid white;
 }
+/************************************** 3. NAVBAR **************************************/
+
 .nav{
     background-color: #878098;
     min-height: 45px;
@@ -113,40 +136,60 @@ textarea{
             flex-wrap: wrap;
         }
     }
-    .nav_word{
+.nav_word{
         font-family: 'Bad Script';
         transition: 0.5s;
     }
-    .nav_word:hover{
+.nav_word:hover{
         transition: 1s;
     }
-    .main_picture_div{
+/************************************** 4. HOMEPAGE **************************************/
+
+/* Main picture on the top of EACH page */
+.main_picture_div{
         padding-top: 45px;
         height: 70vh;
         overflow: hidden;
-    }
+}
 @media only screen and (max-width: 500px) {
     .main_picture_div {
-        padding-top: 90px;
+        padding-top: 150px;
     }
 }
 @media only screen and (max-width: 330px) {
     .main_picture_div {
-        padding-top: 135px;
+        padding-top: 190px;
     }
 }
-    .main_picture{
+/* Main picture on the top of EACH page */
+.main_picture{
         width: 100vw;
         margin-top: -20vh;
-    }
-    .homepage_title{
+}
+.homepage_title{
         margin: 0!important;
-    }
-    .introduction{
+}
+.introduction{
         width: 50vw;
         margin: 0 auto;
+}
+@media only screen and (max-width: 1000px) {
+    .introduction {
+        width: 60vw;
     }
-    .footer{
+}
+@media only screen and (max-width: 700px) {
+    .introduction {
+        width: 70vw;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .introduction {
+        width: 80vw;
+    }
+}
+/************************************** 5. FOOTER **************************************/
+.footer{
         background-color: #bbb5c8;
         height: 90px;
         bottom: 0;
@@ -154,58 +197,108 @@ textarea{
         margin-top: 15vh;
         display: flex;
         justify-content: center;
-    }
-    .logo{
+}
+.logo{
         height: 32px;
         margin-right: 3vw;
         margin-left: 3vw;
         transition: 1s;
-        transform: rotate(0deg)
-    }
-    .logo:hover{
+        transform: rotate(0deg);
+}
+.logo:hover{
         opacity: .5;
         transition: 1s;
-        transform: rotate(30deg)
-    }
-    .block_room{
-        height: 250px;
+        transform: rotate(30deg);
+}
+/************************************** 6. ROOM'S/ACTIVITIES LIST **************************************/
+.block_room{
+        height: auto;
         width: 800px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         padding-top: 5vh;
+}
+@media only screen and (max-width: 850px) {
+    .block_room{
+        flex-wrap: none;
+        display: block;
+        width: auto;
+        margin: auto;
     }
-    .div_picture_block_room{
-        height: 100%;
+}
+.div_picture_block_room{
+        height: 250px;
         width: 40%;
         background-color: white;
         overflow: hidden;
         border: 3px solid white;
+}
+@media only screen and (max-width: 850px) {
+    .div_picture_block_room{
+        margin: auto;
+        width: 50%;
     }
-    .picture_block_room{
+}
+@media only screen and (max-width: 600px) {
+    .div_picture_block_room{
+        margin: auto;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .div_picture_block_room{
+        margin: auto;
+        width: 90%;
+    }
+}
+.picture_block_room{
+        margin: auto;
+        display: block;
         height: 90%;
         transition: 0.5s;
-    }
-    .picture_block_room:hover{
+}
+.picture_block_room:hover{
         opacity: 0.7;
         transition: 0.5s;
-    }
-    .price_size{
+}
+.price_size{
         height: 10%;
         width: 100%;
         color: #120639;
         font-family: 'Andika';
         text-align: center;
         background-color: #878098;
-        margin-top: -4px;
-    }
-    .text_block_room{
-        height: 100%;
+}
+.text_block_room{
+        height: 250px;
         width: 53%;
         padding-left: 3%;
         padding-right: 3%;
         overflow: auto;
+}
+@media only screen and (max-width: 850px) {
+    .text_block_room{
+        margin: auto;
+        width: 70%;
     }
+}
+@media only screen and (max-width: 850px) {
+    .text_block_room{
+        margin: auto;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .text_block_room{
+        margin: auto;
+        width: 90%;
+        overflow: none;
+        height: auto;
+    }
+}
+/************************************* 7. CONTACT **************************************/
+
 .text_form{
     text-align: center;
 }
@@ -222,6 +315,8 @@ textarea{
     padding-right: 5%;
     width: 30%;
 }
+
+/************************************** 8. BEDROOM'S DESCRIPTION **************************************/
 .description_point_box{
     width: 80vw;
     height: 300px;

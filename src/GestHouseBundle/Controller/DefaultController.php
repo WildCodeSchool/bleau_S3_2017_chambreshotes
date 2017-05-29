@@ -14,6 +14,7 @@ class DefaultController extends Controller
     {
         return $this->render('GestHouseBundle:Default:index.html.twig');
     }
+
     /**
      * @Route("/bedrooms" , name="bedrooms")
      */
@@ -21,6 +22,7 @@ class DefaultController extends Controller
     {
         return $this->render('GestHouseBundle:Default:bedroom_list.html.twig');
     }
+
     /**
      * @Route("/activities", name="activities")
      */
@@ -28,6 +30,7 @@ class DefaultController extends Controller
     {
         return $this->render('GestHouseBundle:Default:activities.html.twig');
     }
+
     /**
      * @Route("/activities/town", name="town")
      */
@@ -35,6 +38,7 @@ class DefaultController extends Controller
     {
         return $this->render('GestHouseBundle:Default:town_activities.html.twig');
     }
+
     /**
      * @Route("/contact", name="contact")
      */
@@ -50,6 +54,7 @@ class DefaultController extends Controller
     {
         return $this->render('GestHouseBundle:Default:bedroom.html.twig');
     }
+
 
 
 }
