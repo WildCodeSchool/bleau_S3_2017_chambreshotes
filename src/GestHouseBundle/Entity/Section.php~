@@ -5,12 +5,12 @@ namespace GestHouseBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Activities
+ * Section
  *
- * @ORM\Table(name="activities")
- * @ORM\Entity(repositoryClass="GestHouseBundle\Repository\ActivitiesRepository")
+ * @ORM\Table(name="section")
+ * @ORM\Entity(repositoryClass="GestHouseBundle\Repository\SectionRepository")
  */
-class Activities
+class Section
 {
     /**
      * @var int
@@ -24,9 +24,9 @@ class Activities
     /**
      * @var string
      *
-     * @ORM\Column(name="title", type="string", length=255)
+     * @ORM\Column(name="navTitle", type="string", length=255)
      */
-    private $title;
+    private $navTitle;
 
     /**
      * @var string
@@ -34,6 +34,13 @@ class Activities
      * @ORM\Column(name="content", type="text")
      */
     private $content;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pageTitle", type="string", length=255)
+     */
+    private $pageTitle;
 
 
     /**
@@ -47,27 +54,27 @@ class Activities
     }
 
     /**
-     * Set title
+     * Set navTitle
      *
-     * @param string $title
+     * @param string $navTitle
      *
-     * @return Activities
+     * @return Section
      */
-    public function setTitle($title)
+    public function setNavTitle($navTitle)
     {
-        $this->title = $title;
+        $this->navTitle = $navTitle;
 
         return $this;
     }
 
     /**
-     * Get title
+     * Get navTitle
      *
      * @return string
      */
-    public function getTitle()
+    public function getNavTitle()
     {
-        return $this->title;
+        return $this->navTitle;
     }
 
     /**
@@ -75,7 +82,7 @@ class Activities
      *
      * @param string $content
      *
-     * @return Activities
+     * @return Section
      */
     public function setContent($content)
     {
@@ -93,4 +100,29 @@ class Activities
     {
         return $this->content;
     }
+
+    /**
+     * Set pageTitle
+     *
+     * @param string $pageTitle
+     *
+     * @return Section
+     */
+    public function setPageTitle($pageTitle)
+    {
+        $this->pageTitle = $pageTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get pageTitle
+     *
+     * @return string
+     */
+    public function getPageTitle()
+    {
+        return $this->pageTitle;
+    }
 }
+

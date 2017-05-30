@@ -311,4 +311,3 @@ class Bedrooms
         return $this->description;
     }
 }
-

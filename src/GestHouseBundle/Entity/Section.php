@@ -125,4 +125,3 @@ class Section
         return $this->pageTitle;
     }
 }
-
